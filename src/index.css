@@ -20,6 +20,7 @@ code {
 
 .App {
   display: grid;
+  /* grid-template-columns: auto auto ; */
   grid-template-columns: 25% 75%;
   grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
   background-color: rgb(15, 200, 163);
@@ -40,15 +41,18 @@ code {
 }
 
 #cloud {
-  background-color: rgb(180, 116, 240);
+  /* background-color: rgb(222, 205, 238); */
   grid-column: 1 / 2;
   grid-row: 6 / 8;
+  filter:alpha(opacity=50); 
+  opacity:0.6;
 }
 
 #highlow {
   background-color: rgb(235, 146, 73);
   grid-column: 1 / 2;
   grid-row: 8 / 11;
+  color: white;
 }
 
 #today {
@@ -68,8 +72,10 @@ code {
   text-align: left;
   color: white;
   font-size: larger;
-  width: 90%;
-  align-content: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 #highlights {

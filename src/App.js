@@ -1,32 +1,26 @@
 import './App.css';
 // import { Airquality } from './components/airquality';
-import { Cloud } from './components/cloud';
-import { Highlights } from './components/highlights';
-import { Highlow } from './components/highlow';
-import { Histogram } from './components/histogram';
-// import { Humidity } from './components/humidity';
-// import { Sunrisesunset } from './components/sunrisesunset';
-import { Temperometer } from './components/temperometer';
-import { Today } from './components/today';
-// import { Uvindex } from './components/uvindex';
-// import { Visibility } from './components/visibility';
-// import { WindStatus } from './components/windstatus';
-import { Flexcontainer } from './components/flexcontainer';
-// import styled from 'styled-components';
+import { Cloud } from './components/climate/cloud';
+import { Highlights } from './components/climate/highlights';
+import { Highlow } from './components/climate/highlow';
+import { Histogram } from './components/climate/histogram';
+import { Temperometer } from './components/climate/temperometer';
+import { Today } from './components/climate/today';
+import { Flexcontainer } from './components/climate/flexcontainer';
+
 
 function App() {
 
 
   return (
       <div class="App">
-        <Temperometer />
-        <Cloud />
-        <Highlow />
-        <Today />
-        <Histogram />
-        <Highlights />
-        <Flexcontainer />
- 
+          <Temperometer />
+          <Cloud />
+          <Highlow />
+          <Today />
+          <Histogram />
+          <Highlights />
+          <Flexcontainer />
     </div>
   );
 }
