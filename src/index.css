@@ -1,8 +1,14 @@
+* {
+  padding: 7px;
+  margin: 7px;
+  border-radius: 12px;
+  font-size: 1.7rem;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 800;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +17,88 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  background-color: rgb(15, 200, 163);
+}
+
+
+#temperometer {
+  /* filter:alpha(opacity=50); 
+  opacity:1.9; */
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin: auto;
+  background-color: rgb(244, 247, 247);
+  color: rgb(152, 149, 149);
+}
+
+#cloud {
+  background-color: rgb(180, 116, 240);
+  grid-column: 1 / 2;
+  grid-row: 6 / 8;
+}
+
+#highlow {
+  background-color: rgb(235, 146, 73);
+  grid-column: 1 / 2;
+  grid-row: 8 / 11;
+}
+
+#today {
+  filter:alpha(opacity=50); 
+  opacity:1.9;
+  grid-column: 2 / 2;
+  grid-row: 1 / 2;
+  text-align: left;
+  color: white;
+  font-size: larger;
+}
+
+#histogram {
+  background-color: rgb(235, 146, 73);
+  grid-column: 2 / 2;
+  grid-row: 2 / 5;
+  text-align: left;
+  color: white;
+  font-size: larger;
+  width: 90%;
+  align-content: center;
+}
+
+#highlights {
+  filter:alpha(opacity=50); 
+  opacity:1.9;
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  text-align: left;
+  color: white;
+  font-size: 3rem;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  filter:alpha(opacity=50); 
+  opacity:1.9;
+  grid-column: 2 / 2;
+  grid-row: 6 / 11;
+  justify-content: center;
+}
+
+.boxes {
+  background-color: aliceblue;
+  text-align: center;
+  width: 30%;
+  height: 40%;
+  text-align: left;
+  color: rgb(153, 153, 156);
+  font-size: 2rem;
+}
+

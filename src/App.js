@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+// import { Airquality } from './components/airquality';
+import { Cloud } from './components/cloud';
+import { Highlights } from './components/highlights';
+import { Highlow } from './components/highlow';
+import { Histogram } from './components/histogram';
+// import { Humidity } from './components/humidity';
+// import { Sunrisesunset } from './components/sunrisesunset';
+import { Temperometer } from './components/temperometer';
+import { Today } from './components/today';
+// import { Uvindex } from './components/uvindex';
+// import { Visibility } from './components/visibility';
+// import { WindStatus } from './components/windstatus';
+import { Flexcontainer } from './components/flexcontainer';
+// import styled from 'styled-components';
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="App">
+        <Temperometer />
+        <Cloud />
+        <Highlow />
+        <Today />
+        <Histogram />
+        <Highlights />
+        <Flexcontainer />
+ 
     </div>
   );
 }
