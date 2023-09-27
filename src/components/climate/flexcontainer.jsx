@@ -1,20 +1,32 @@
 import React from 'react';
-import { Uvindex } from './uvindex';
-import { WindStatus } from './windstatus';
-import { Sunrisesunset } from './sunrisesunset';
-import { Humidity } from './humidity';
-import { Visibility } from './visibility';
-import { Airquality } from './airquality';
+import { Uvindex } from './Uvindex';
+import { WindStatus } from './Windstatus';
+import { Sunrisesunset } from './Sunrisesunset';
+import { Humidity } from './Humidity';
+import { Visibility } from './Visibility';
+import { Airquality } from './Airquality';
+import styled from 'styled-components';
+
+const DIV = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  filter:alpha(opacity=50); 
+  opacity:1.9;
+  grid-column: 2 / 2;
+  grid-row: 5 / 11;
+  justify-content: center;
+`;
+
 
 export const Flexcontainer = ()=>{
-    return(<div class="flexcontainer">
+    return(<DIV>
         <Uvindex />
         <WindStatus />
         <Sunrisesunset />
         <Humidity />
         <Visibility />
         <Airquality />
-    </div>
+    </DIV>
 
     );
 }
