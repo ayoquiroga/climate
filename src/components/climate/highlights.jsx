@@ -11,9 +11,14 @@ const DIV = styled.div`
   font-size: 3rem;
 `;
 
+const P = styled.p`
+  font-size: 60px;
+
+`;
+
 export const Highlights = ()=>{
     return(<DIV>
-        <p>Highlights</p>
+        <P>Highlights</P>
     </DIV>
     );
 }

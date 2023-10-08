@@ -11,9 +11,13 @@ const DIV = styled.div`
   font-size: larger;
 `;
 
+const P = styled.p`
+  font-size: 60px;
+`;
+
 export const Today = ()=>{
     return(<DIV>
-        <p>Today</p>
+        <P>Today</P>
     </DIV>
 
     );

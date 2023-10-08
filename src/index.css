@@ -1,6 +1,7 @@
 * {
   padding: 7px;
   margin: 7px;
+  box-sizing: border-box;
   border-radius: 12px;
   font-size: 1.7rem;
 

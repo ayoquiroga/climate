@@ -11,12 +11,27 @@ const DIV = styled.div`
   font-size: 2rem;
 `;
 
+
+
 export const Sunrisesunset = ({values})=>{
+
+  function parseSunrise(){
+    let sunrise= values["sunrise"][0]
+    return sunrise
+  }
+
+  function parseSunset(){
+    let sunset = values["sunset"][0]
+    return sunset;
+  }
+  
     return(<DIV>
             <p>Sunrise Sunset</p>
-            <p>{values["sunrise"][0]}</p>
-            <p>{values["sunset"][0]}</p>
-    </DIV>
+            <p>{parseSunrise()}</p>
+            <p>{parseSunset()}</p>
+          </DIV>
 
     );
 }
+
+

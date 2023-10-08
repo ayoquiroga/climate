@@ -48,14 +48,14 @@ export const Weather = () => {
   })
 
   const [datahisto] =useState({
-    labels: ['12:00 AM', '03:00 AM', '06:00 AM', '09:00 AM', '12:00 PM', '03:00 PM', '06:00 PM', '09:00 PM', '12:00 AM',],
-    datasets:[{
-      label:'Hora',
-      backgroundColor: 'white',
-      borderWidth: 1,
-      hoverBackgroundColor: 'grey',
-      data: [30,20,25,10,25,63,80,25,26]
-      }]
+    labels: ['12:00 AM', '03:00 AM', '06:00 AM', '09:00 AM', '12:00 PM', '03:00 PM', '06:00 PM', '09:00 PM', '12:00 AM',]
+    // datasets:[{
+    //   label:'Hora',
+    //   backgroundColor: 'white',
+    //   borderWidth: 1,
+    //   hoverBackgroundColor: 'grey',
+    //   data: [30,20,25,10,25,63,80,25,26]
+      // }]
     })
 
   return( 
