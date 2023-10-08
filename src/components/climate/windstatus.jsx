@@ -11,9 +11,10 @@ const DIV = styled.div`
   font-size: 2rem;
 `;
 
-export const WindStatus = ()=>{
+export const WindStatus = ({values})=>{
     return(<DIV>
         <p>Wind Status</p>
+        <p>{values["windSpeed"]}</p>
     </DIV>
 
     );

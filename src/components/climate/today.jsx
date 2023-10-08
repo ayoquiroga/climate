@@ -11,9 +11,9 @@ const DIV = styled.div`
   font-size: larger;
 `;
 
-export const Today = ()=>{
+export const Today = ({values})=>{
     return(<DIV>
-        <p>Today</p>
+        <p>Today: {values["currentdate"]}</p>
     </DIV>
 
     );

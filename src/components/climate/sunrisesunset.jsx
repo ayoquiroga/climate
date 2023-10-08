@@ -11,9 +11,11 @@ const DIV = styled.div`
   font-size: 2rem;
 `;
 
-export const Sunrisesunset = ()=>{
+export const Sunrisesunset = ({values})=>{
     return(<DIV>
             <p>Sunrise Sunset</p>
+            <p>{values["sunrise"][0]}</p>
+            <p>{values["sunset"][0]}</p>
     </DIV>
 
     );

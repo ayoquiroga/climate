@@ -11,9 +11,10 @@ const DIV = styled.div`
   font-size: 2rem;
 `;
 
-export const Humidity = ()=>{
+export const Humidity = ({values})=>{
     return(<DIV>
         <p>Humidity</p>
+        <p>{values["humidity"]}</p>
     </DIV>
 
     );

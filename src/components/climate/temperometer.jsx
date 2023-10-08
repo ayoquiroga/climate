@@ -14,9 +14,12 @@ const DIV = styled.div`
     color: rgb(152, 149, 149);
 `;
 
-export const Temperometer = ()=>{
+export const Temperometer = ({values})=>{
+
+    
     return(<DIV>
-        <p>20 C°</p>
+        <p>{values["temperature"]}</p>
+        <p>{values["unidadtemperature"]}</p>
     </DIV>
 
     );

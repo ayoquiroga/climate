@@ -13,9 +13,10 @@ const DIV = styled.div`
   margin-left: 5%;
 `;
 
-export const Highlow = ()=>{
+export const Highlow = ({values})=>{
     return(<DIV>
         <p>High | Low</p>
+        <p>{values["high"][0]} | {values["low"][0]}</p>
     </DIV>
 
     );

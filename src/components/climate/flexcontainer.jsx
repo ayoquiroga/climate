@@ -4,7 +4,7 @@ import { WindStatus } from './Windstatus';
 import { Sunrisesunset } from './Sunrisesunset';
 import { Humidity } from './Humidity';
 import { Visibility } from './Visibility';
-import { Airquality } from './Airquality';
+import { Airquality} from './Airquality';
 import styled from 'styled-components';
 
 const DIV = styled.div`
@@ -18,14 +18,17 @@ const DIV = styled.div`
 `;
 
 
-export const Flexcontainer = ()=>{
+export const Flexcontainer = ({values})=>{
+
+
     return(<DIV>
-        <Uvindex />
-        <WindStatus />
-        <Sunrisesunset />
-        <Humidity />
-        <Visibility />
-        <Airquality />
+        <Uvindex values={values} />
+        <WindStatus values={values} />
+        <Sunrisesunset values={values} />
+        <Humidity values={values} />
+        <Visibility values={values} />
+        <Airquality values={values} />
+
     </DIV>
 
     );

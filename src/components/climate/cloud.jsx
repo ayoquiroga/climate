@@ -10,9 +10,12 @@ const DIV = styled.div`
   color: white;
 `;
 
-export const Cloud = ()=>{
+export const Cloud = ({values})=>{
     return(<DIV>
-        <p>Cloud</p>
+        <p>Viento</p>
+        <p>{values["windspeed"]}</p>
+        <p>{values["winddirection"]}</p>
+        <p>{values["windunit"]}</p>
     </DIV>
 
     );
