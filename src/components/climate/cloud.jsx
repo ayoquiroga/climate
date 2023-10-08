@@ -13,9 +13,8 @@ const DIV = styled.div`
 export const Cloud = ({values})=>{
     return(<DIV>
         <p>Viento</p>
-        <p>{values["windspeed"]}</p>
-        <p>{values["winddirection"]}</p>
-        <p>{values["windunit"]}</p>
+        <p>{values["windspeed"]} {values["windunit"]}</p>
+        <p>{values["currentdate"]}</p>
     </DIV>
 
     );

@@ -5,7 +5,7 @@ const DIV = styled.div`
   filter:alpha(opacity=50); 
   opacity:1.9;
   grid-column: 2 / 3;
-  grid-row: 4 / 5;
+  grid-row: 5 / 7;
   text-align: left;
   color: white;
   font-size: 3rem;

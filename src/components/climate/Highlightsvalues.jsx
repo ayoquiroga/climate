@@ -13,12 +13,12 @@ const DIV = styled.div`
   filter:alpha(opacity=50); 
   opacity:1.9;
   grid-column: 2 / 2;
-  grid-row: 5 / 11;
+  grid-row: 6 / 13;
   justify-content: center;
 `;
 
 
-export const Flexcontainer = ({values})=>{
+export const Highlightsvalues = ({values})=>{
 
 
     return(<DIV>

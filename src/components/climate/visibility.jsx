@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const DIV = styled.div`
-  background-color: aliceblue;
+  background-color: white;
   text-align: center;
   width: 30%;
   height: 40%;

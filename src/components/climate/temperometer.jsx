@@ -18,8 +18,8 @@ export const Temperometer = ({values})=>{
 
     
     return(<DIV>
-        <p>{values["temperature"]}</p>
-        <p>{values["unidadtemperature"]}</p>
+        <p>{values["temperature"]} {values["unidadtemperature"]}</p>
+        <p></p>
     </DIV>
 
     );

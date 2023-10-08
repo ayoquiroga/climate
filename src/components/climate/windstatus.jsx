@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const DIV = styled.div`
-  background-color: aliceblue;
+  background-color: white;
   text-align: center;
   width: 30%;
   height: 40%;
@@ -14,7 +14,7 @@ const DIV = styled.div`
 export const WindStatus = ({values})=>{
     return(<DIV>
         <p>Wind Status</p>
-        <p>{values["windSpeed"]}</p>
+        <p>{values["windirection"]}</p>
     </DIV>
 
     );

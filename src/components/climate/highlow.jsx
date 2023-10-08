@@ -5,7 +5,7 @@ const DIV = styled.div`
 
   background-color: rgb(235, 146, 73);
   grid-column: 1 / 2;
-  grid-row: 7 / 11;
+  grid-row: 9 / 13;
   color: white;
   margin-bottom: 7%;
   width: 90%;
