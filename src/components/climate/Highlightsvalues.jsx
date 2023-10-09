@@ -15,6 +15,7 @@ const DIV = styled.div`
   grid-column: 2 / 2;
   grid-row: 6 / 13;
   justify-content: center;
+  position: relative;
 `;
 
 
@@ -29,4 +30,4 @@ export const Highlightsvalues = ({values}) => {
             <Airquality values={values} />
           </DIV>
           );
-        };
+        }

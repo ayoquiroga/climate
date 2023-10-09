@@ -13,10 +13,12 @@ const DIV = styled.div`
   width: 90%;
   margin-left: 10%;
   background: linear-gradient(70deg, rgb(235, 146, 73), #FFB233);
+  position: relative;
 `;
 
 const P = styled.p`
   font-size: 1.8rem;
+  position: relative;
 `;
 
 

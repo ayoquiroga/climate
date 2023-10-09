@@ -9,10 +9,12 @@ const DIV = styled.div`
   text-align: left;
   color: white;
   font-size: larger;
+  position: relative;
 `;
 
 const P = styled.p`
   font-size: 60px;
+  position: relative;
 `;
 
 export const Today = ()=>{

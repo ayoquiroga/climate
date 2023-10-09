@@ -14,6 +14,7 @@ const DIV = styled.div`
   grid-template-columns: 25% 75%;
   grid-template-rows: repeat(12, 110px);
   background-color: rgb(116, 208, 216);
+  position: relative;
   ${'' /* height:70vh;width:50vw; */}
 `;
 

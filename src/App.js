@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Weather } from './components/climate/Weather';
+import Transport from './components/transport/Transport';
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
   return (
       <div className="App">
         <Weather />
-        <Weather />
+        <Transport />
     </div>
   );
 }

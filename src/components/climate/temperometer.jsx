@@ -9,11 +9,13 @@ const DIV = styled.div`
     border-radius: 50%;
     margin: auto;
     background-color: rgb(244, 247, 247);
+    position: relative;
 `;
 
 const P = styled.p`
   text-color: rgb(152, 149, 149);
   margin-top: 105px;
+  position: relative;
 `;
 
 export const Temperometer = ({values})=>{

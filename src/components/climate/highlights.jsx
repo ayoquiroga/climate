@@ -9,11 +9,12 @@ const DIV = styled.div`
   text-align: left;
   color: white;
   font-size: 3rem;
+  position: relative;
 `;
 
 const P = styled.p`
   font-size: 60px;
-
+  position: relative;
 `;
 
 export const Highlights = ()=>{
