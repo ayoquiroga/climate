@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import './Temperometer.css'
 
 const DIV = styled.div`
     grid-column: 1 / 2;
     grid-row: 1 / 6;
-    width: 12rem;
+    ${'' /* width: 12rem;
     height: 12rem;
     border-radius: 50%;
     margin: auto;
     background-color: rgb(244, 247, 247);
-    position: relative;
+    position: relative; */}
 `;
 
 const P = styled.p`
@@ -21,7 +22,7 @@ const P = styled.p`
 export const Temperometer = ({values})=>{
 
     
-    return( <DIV>
+    return( <DIV className='temperature'>
                 <P>{values["current_weather"]["temperature"]} {values["hourly_units"]["temperature_2m"]}</P>
             </DIV>
 

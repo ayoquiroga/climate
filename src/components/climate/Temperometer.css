@@ -1,0 +1,26 @@
+.temperature{
+    margin-left: 10%;
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    margin: auto;
+    background-color: rgb(246, 245, 248);
+    /* background: linear-gradient(
+        0deg,
+        #fff 50%,
+        rgba(#fff,.2) 50%
+    );
+
+    &:before{
+        width: 16rem;
+        height: 16rem;
+        position: absolute;
+        top:0;
+        left:0;
+        background: rgb(116, 208, 216) content-box;
+        border-radius: 50%;
+        padding: .5em;
+        box-sizing: border-box;
+    } */
+}
