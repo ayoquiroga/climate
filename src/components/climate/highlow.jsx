@@ -11,7 +11,6 @@ const DIV = styled.div`
   margin-bottom: 15%;
   margin-top: -5%;
   width: 90%;
-  ${'' /* text-align: center; */}
   margin-left: 10%;
   background: linear-gradient(70deg, rgb(235, 146, 73), #FFB233);
 `;
@@ -23,7 +22,9 @@ const P = styled.p`
 
 export const Highlow = ({values})=>{
     return(<DIV>
-            <P className='hl'>{values["high"][0]} | {values["low"][0]}</P>
+
+            {/* hacerlo dinámico */}
+            <P className='hl'>{values["daily"]["temperature_2m_max"][0]} | {values["daily"]["temperature_2m_min"][0]}</P>
             <P className="lbls">High | Low</P>
           </DIV>
 

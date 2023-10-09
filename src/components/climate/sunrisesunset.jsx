@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const DIV = styled.div`
   background-color: white;
-  text-align: center;
   width: 30%;
   height: 40%;
   text-align: left;
@@ -11,24 +10,39 @@ const DIV = styled.div`
   font-size: 2rem;
 `;
 
+const P = styled.p`
+  text-align: center;
+`;
 
+
+function convertFromStringToDate(responseDate) {
+  let dateComponents = responseDate.split('T');
+  return(dateComponents[1])
+}
 
 export const Sunrisesunset = ({values})=>{
 
+  
   function parseSunrise(){
+
+    //hay que hacerlo automático
     let sunrise= values["sunrise"][0]
-    return sunrise
+
+    return convertFromStringToDate(sunrise)
+
   }
 
   function parseSunset(){
+
+        //hay que hacerlo automático
     let sunset = values["sunset"][0]
-    return sunset;
+
+    return convertFromStringToDate(sunset);
   }
-  
+
     return(<DIV>
-            <p>Sunrise Sunset</p>
-            <p>{parseSunrise()}</p>
-            <p>{parseSunset()}</p>
+            <P>Sunrise | Sunset</P>
+            <P>{parseSunrise()} | {parseSunset()}</P>
           </DIV>
 
     );

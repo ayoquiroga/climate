@@ -19,9 +19,9 @@ const P = styled.p`
 export const Temperometer = ({values})=>{
 
     
-    return(<DIV>
-        <P>{values["temperature"]} {values["unidadtemperature"]}</P>
-    </DIV>
+    return( <DIV>
+                <P>{values["current_weather"]["temperature"]} {values["hourly_units"]["temperature_2m"]}</P>
+            </DIV>
 
     );
 }

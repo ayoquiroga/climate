@@ -12,18 +12,13 @@ import datajson from './data.json';
 const DIV = styled.div`
   display: grid;
   grid-template-columns: 25% 75%;
-  grid-template-rows: repeat(12, 100px);
+  grid-template-rows: repeat(12, 110px);
   background-color: rgb(116, 208, 216);
+  ${'' /* height:70vh;width:50vw; */}
 `;
 
 
-
 export const Weather = () => {
-
-  const [temperatures] = useState({
-    temperature: datajson["current_weather"]["temperature"], 
-    unidadtemperature: datajson["hourly_units"]["temperature_2m"]
-  })
 
   const [highlightsvalues] = useState({
     uvindex: datajson["current_weather"]["uvindex"],
@@ -34,17 +29,6 @@ export const Weather = () => {
     humidity: datajson["current_weather"]["humidity"],
     visibility: datajson["current_weather"]["visibility"],
     airquality: datajson["current_weather"]["airquality"]
-  })
-
-  const [highlows] = useState({
-    high: datajson["daily"]["temperature_2m_max"], 
-    low: datajson["daily"]["temperature_2m_min"]
-  })
-
-  const [windstatus] = useState({
-    windspeed: datajson["current_weather"]["windspeed"], 
-    windunit: datajson["daily_units"]["windspeed_10m_max"], 
-    currentdate: datajson["current_weather"]["time"]
   })
 
   const [datahisto] =useState({
@@ -60,9 +44,9 @@ export const Weather = () => {
 
   return( 
   <DIV>
-    <Temperometer values={temperatures} />
-    <Cloud values={windstatus}/>
-    <Highlow values={highlows} />
+    <Temperometer values={datajson} />
+    <Cloud values={datajson}/>
+    <Highlow values={datajson} />
     <Today />
     <Histogram values={datahisto} />
     <Highlights />

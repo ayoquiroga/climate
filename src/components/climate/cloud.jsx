@@ -5,7 +5,6 @@ const DIV = styled.div`
   grid-column: 1 / 2;
   grid-row: 5 / 8;
   filter:alpha(opacity=50); 
-  ${'' /* opacity:0.6; */}
   color: white;
 `;
 
@@ -25,9 +24,9 @@ export const Cloud = ({values})=>{
 
     return(<DIV>
             <P>Viento</P>
-            <P>{values["windspeed"]} {values["windunit"]}</P>
-            {/* <p>{values["currentdate"]}</p> */}
+            <P>{values["current_weather"]["windspeed"]}  {values["daily_units"]["windspeed_10m_max"]}</P>
             <P>{dateparse()}</P>
+            {/* <P>{values["current_weather"]["time"]}</P> */}
           </DIV>
     );
 }
