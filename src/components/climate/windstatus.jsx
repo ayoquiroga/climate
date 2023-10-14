@@ -11,11 +11,11 @@ const DIV = styled.div`
   font-size: 2rem;
 `;
 
-export const WindStatus = ({values})=>{
+export const WindStatus = (props)=>{
     return(<DIV>
-        <p>Wind Status</p>
-        <p>{values["windirection"]}</p>
-    </DIV>
+            <p>Wind Status</p>
+            <p>{props.windspeed} | {props.winddirection}</p>
+          </DIV>
 
     );
 }

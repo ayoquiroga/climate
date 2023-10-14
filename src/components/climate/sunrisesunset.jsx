@@ -20,24 +20,32 @@ function convertFromStringToDate(responseDate) {
   return(dateComponents[1])
 }
 
-export const Sunrisesunset = ({values})=>{
-
+export const Sunrisesunset = (props)=>{
   
   function parseSunrise(){
 
-    //hay que hacerlo automático
-    let sunrise= values["sunrise"][0]
-
-    return convertFromStringToDate(sunrise)
-
+    if(props.sunrise){
+      let sunrise= props.sunrise.toString()
+      return convertFromStringToDate(sunrise)
+    } else {
+      let sunrise= '00:00'
+      return sunrise
+    }
   }
 
   function parseSunset(){
+    //hay que hacerlo automático
+    // let sunset = props.sunset
+    if(props.sunset){
+      let sunset = props.sunset.toString()
+      return convertFromStringToDate(sunset);
+    } else {
+      let sunset= '00:00'
+      return sunset
+    }
+    // return sunset;
 
-        //hay que hacerlo automático
-    let sunset = values["sunset"][0]
 
-    return convertFromStringToDate(sunset);
   }
 
     return(<DIV>

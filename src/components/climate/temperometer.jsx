@@ -19,12 +19,12 @@ const P = styled.p`
   position: relative;
 `;
 
-export const Temperometer = ({values})=>{
+export const Temperometer = (props)=>{
 
     
-    return( <DIV className='temperature'>
-                <P>{values["current_weather"]["temperature"]} {values["hourly_units"]["temperature_2m"]}</P>
-            </DIV>
-
+    return( 
+        <DIV className='temperature'>
+            <P>{props.temperature} {props.tempunit}</P>
+        </DIV>
     );
 }

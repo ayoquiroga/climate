@@ -22,11 +22,11 @@ const P = styled.p`
 `;
 
 
-export const Highlow = ({values})=>{
+export const Highlow = (props)=>{
     return(<DIV>
 
             {/* hacerlo dinámico */}
-            <P className='hl'>{values["daily"]["temperature_2m_max"][0]} | {values["daily"]["temperature_2m_min"][0]}</P>
+            <P className='hl'>{props.high} | {props.low}</P>
             <P className="lbls">High | Low</P>
           </DIV>
 

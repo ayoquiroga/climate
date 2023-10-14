@@ -11,10 +11,10 @@ const DIV = styled.div`
   font-size: 2rem;
 `;
 
-export const Visibility = ({values})=>{
+export const Visibility = (props)=>{
     return(<DIV>
         <p>Visibility</p>
-        <p>{values["visibility"]}</p>
+        <p>{props.visibility}</p>
     </DIV>
 
     );

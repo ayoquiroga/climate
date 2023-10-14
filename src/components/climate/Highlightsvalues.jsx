@@ -19,15 +19,15 @@ const DIV = styled.div`
 `;
 
 
-export const Highlightsvalues = ({values}) => {
+export const Highlightsvalues = (props) => {
 
     return(<DIV>
-            <Uvindex values={values} />
-            <WindStatus values={values} />
-            <Sunrisesunset values={values} />
-            <Humidity values={values} />
-            <Visibility values={values} />
-            <Airquality values={values} />
+            <Uvindex uvindex={props.uvindex} />
+            <WindStatus windspeed={props.windspeed} winddirection={props.winddirection} />
+            <Sunrisesunset sunset={props.sunset} sunrise={props.sunrise} />
+            <Humidity humidity={props.humidity} />
+            <Visibility visibility={props.visibility} />
+            <Airquality visibility={props.visibility} />
           </DIV>
           );
-        }
+}

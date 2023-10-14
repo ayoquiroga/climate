@@ -12,10 +12,10 @@ const DIV = styled.div`
 `;
 
 
-export const Airquality = ({values})=>{
+export const Airquality = (props)=>{
     return(<DIV>
         <p>Air Quality</p>
-        <p>{values["airquality"]}</p>
+        <p>{props.visibility}</p>
     </DIV>
 
     );

@@ -11,10 +11,10 @@ const DIV = styled.div`
   font-size: 2rem;
 `;
 
-export const Uvindex = ({values})=>{
+export const Uvindex = (props)=>{
     return(<DIV>
         <p>UV Index</p>
-        <p>{values["uvindex"]}</p>
+        <p>{props.uvindex}</p>
     </DIV>
 
     );

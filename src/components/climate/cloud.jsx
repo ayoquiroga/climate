@@ -19,14 +19,13 @@ function dateparse(){
   return dias[today.getDay()]+', '+ today.toLocaleTimeString()
 }
 
-export const Cloud = ({values})=>{
+export const Cloud = (props)=>{
 
 
     return(<DIV>
             <P>Viento</P>
-            <P>{values["current_weather"]["windspeed"]}  {values["daily_units"]["windspeed_10m_max"]}</P>
+            <P>{props.windspeed}</P>
             <P>{dateparse()}</P>
-            {/* <P>{values["current_weather"]["time"]}</P> */}
           </DIV>
     );
 }
