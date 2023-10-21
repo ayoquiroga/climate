@@ -7,7 +7,7 @@ import { Temperometer } from './Temperometer';
 import { Today } from './Today';
 import { Highlightsvalues } from './Highlightsvalues';
 import styled from "styled-components";
-import datajson from './data.json';
+// import datajson from './data.json';
 // import wmoes from './wmo-es.js'
 
 const DIV = styled.div`
@@ -18,11 +18,14 @@ const DIV = styled.div`
   position: relative;
 `;
 
-
-
 export const Weather = () => {
 
   const url='https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,relativehumidity_2m,is_day,weathercode,windspeed_10m,winddirection_10m&hourly=visibility&daily=temperature_2m_max,temperature_2m_min,sunrise,sunset,uv_index_max&timezone=America%2FSao_Paulo&forecast_days=1'
+
+  
+  const [datahisto] =useState({
+    labels: ['12:00 AM', '03:00 AM', '06:00 AM', '09:00 AM', '12:00 PM', '03:00 PM', '06:00 PM', '09:00 PM', '12:00 AM']
+    })
 
   const [data, setData] = useState({});
     
@@ -30,7 +33,7 @@ export const Weather = () => {
     const response = await fetch(url)
     if(response.ok){
       const datos = await response.json()
-      setData(datos)      
+      setData(datos) 
     }
   }
 
@@ -38,15 +41,10 @@ export const Weather = () => {
     obtenerDatosAPI()
   }, []);
 
-
-  const [datahisto] =useState({
-    labels: ['12:00 AM', '03:00 AM', '06:00 AM', '09:00 AM', '12:00 PM', '03:00 PM', '06:00 PM', '09:00 PM', '12:00 AM']
-    })
-
    if(!data){
-      return <div> Loading</div>;
+      return <div> Loading...</div>;
     } 
-console.log(data)
+
   return( 
   <DIV>
     <Temperometer temperature={data && data["current"] && data["current"]["temperature_2m"]} 
